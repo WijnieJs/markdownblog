@@ -40,7 +40,9 @@ function ContactForm() {
     event.preventDefault();
 
     setRequestStatus("pending");
-
+    setEnteredName("");
+    setEnteredEmail("");
+    setEnteredMessage("");
     try {
       await sendContactData({
         email: enteredEmail,
