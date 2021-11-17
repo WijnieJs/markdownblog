@@ -7,7 +7,7 @@ function Hero() {
     <section className={styles.hero}>
       <div className={styles.image}>
         <Image
-          src="/images/site/aa.png"
+          src="/images/site/laptop.jpg"
           alt="Profile pic"
           width={300}
           height={300}
