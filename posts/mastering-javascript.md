@@ -2,7 +2,7 @@
 title: Mastering JavaScript
 excerpt: JavaScript is the most important programming language for web development. You probably don't know it well enough!
 image: mastering-js-thumb.png
-isFeatured: false
+isFeatured: true
 date: "2021-10-30"
 ---
 
@@ -30,8 +30,31 @@ function chunk(array, size) {
 
   return emptyStart;
 }
-
-printBasics();
 ```
 
-Learn more about it [here](https://academind.com).
+## Solving the challenge with fliar
+
+Write a function that accepts a string.
+
+```js
+function capitalize(str) {
+  return str
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+
+  // const a = str.split(" ");
+
+  // let q = "";
+  // let b = "";
+  // a.forEach((word) => {
+  //   let bar = word[0].toUpperCase();
+  //   q = q + " " + bar + word.slice(1);
+  //   b = q.split(" ");
+  //   b.shift();
+  // });
+  // return b.join(" ");
+}
+```
+
+Test it out in browser javascript [here](https://jsbin.com/?js,console).
