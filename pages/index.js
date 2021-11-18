@@ -55,6 +55,7 @@ function HomePage(props) {
           cursorChar="|"
         />
       </div>
+      <h1 className={classes.story}>Sharing my latest stories </h1>
       <FeaturedPosts posts={props.posts} />
     </Fragment>
   );

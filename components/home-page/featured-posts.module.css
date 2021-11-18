@@ -1,8 +1,8 @@
 .latest {
   width: 90%;
   max-width: 80rem;
-  margin: var(--size-20) auto;
- 
+  margin: var(--size-16) auto;
+  
 }
 
 .latest h2 {
@@ -16,9 +16,9 @@
 @media (min-width: 768px) {
   .latest   {
  
-    background-color: red;
+    
   width: 800px;
-  margin-top: 52vh;;
+  
 
   }
 }

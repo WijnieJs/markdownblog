@@ -26,20 +26,22 @@ function Hero(props) {
             <Image
               src="/images/site/laptop.jpg"
               alt="Profile pic"
-              width={800}
-              height={800}
+              width={400}
+              height={400}
             />
             <div className={classes.shadowcustom}>
               <div className={classes.shadowinner}> </div>
             </div>
           </div>
-          <h1 className={classes.title}>
-            {" "}
-            Hello I am Wijnand. Nice to meet you!
-          </h1>
-          <p className={classes.text}>
-            I want too introduce my work to you. Have a Look!
-          </p>
+          <div>
+            <h1 className={classes.title}>
+              {" "}
+              Hello I am Wijnand. Nice to meet you!
+            </h1>
+            <p className={classes.text}>
+              I want like introduce my work to you. Have a Look!
+            </p>
+          </div>
         </div>
 
         <div className={flipCss}>
@@ -47,8 +49,8 @@ function Hero(props) {
             <Image
               src="/images/site/max.png"
               alt="Profile pic"
-              width={210}
-              height={210}
+              width={310}
+              height={310}
             />
             <div className={classes.shadowcustom}>
               <div className={classes.shadowinner}> </div>
