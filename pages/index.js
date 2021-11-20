@@ -7,7 +7,7 @@ import Hero from "../components/home-page/hero";
 import { getFeaturedPosts } from "../lib/posts-utils";
 import { useInterval } from "../lib/useInterval";
 
-import classes from "./index.module.css";
+import classes from "../styles/index.module.css";
 function HomePage(props) {
   let [flipping, setFlipping] = useState(false);
 

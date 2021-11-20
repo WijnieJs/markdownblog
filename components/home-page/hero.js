@@ -4,7 +4,6 @@ import classes from "./hero.module.css"; // Import css modules stylesheet as sty
 
 function Hero(props) {
   const { flipping } = props;
-  console.log(flipping);
 
   let statusClasses = "";
   let flipperClasses = "";
@@ -26,32 +25,38 @@ function Hero(props) {
             <Image
               src="/images/site/laptop.jpg"
               alt="Profile pic"
-              width={400}
-              height={400}
+              width={290}
+              height={290}
             />
+            <div className={classes.heroSection}>
+              <h1 className={classes.title}> Passionate about development!</h1>
+              <p className={classes.text}>
+                Hard work and devotion too be the best
+              </p>
+            </div>
             <div className={classes.shadowcustom}>
               <div className={classes.shadowinner}> </div>
             </div>
-          </div>
-          <div>
-            <h1 className={classes.title}>
-              {" "}
-              Hello I am Wijnand. Nice to meet you!
-            </h1>
-            <p className={classes.text}>
-              I want like introduce my work to you. Have a Look!
-            </p>
           </div>
         </div>
 
         <div className={flipCss}>
           <div className={classes.front}>
             <Image
-              src="/images/site/max.png"
+              src="/images/site/wijnie.jpg"
               alt="Profile pic"
-              width={310}
-              height={310}
+              width={290}
+              height={290}
             />
+            <div className={classes.heroSection}>
+              <h1 className={classes.title}>
+                {" "}
+                Hello I am Wijnand. Nice to meet you!
+              </h1>
+              <p className={classes.text}>
+                Sharing some blogs and latest projects..
+              </p>
+            </div>
             <div className={classes.shadowcustom}>
               <div className={classes.shadowinner}> </div>
             </div>

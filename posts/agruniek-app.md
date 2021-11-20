@@ -1,52 +1,75 @@
 ---
 title: "Agruniek schedule creator"
-date: "2020-10-15"
+date: "2020-10-28"
 image: ar.png
 excerpt: This Arr-app is made  for sharing schedules convenient from excel to json to read and sort online.
 isFeatured: true
 ---
 
-NextJS is a **framework for ReactJS**.
+Schedule sharing made easy. **Sorting algoritm for all variables!**.
 
-Wait a second ... a "framework" for React? Isn't React itself already a framework for JavaScript?
+Wait wat..? Does this mean that the admin can update the files in excel,
+Add more drivers , customers, ore duty's .
+And all excell columns will be sorted and saved as json.
 
-Well ... first of all, React is a "library" for JavaScript. That seems to be important for some people.
+## Does it work?
 
-Not for me, but still, there is a valid point: React already is a framework / library for JavaScript. So it's already an extra layer on top of JS.
+Well ... It does work perfectly. It was kind of difficult to come up with an solution because every day has such many different variables.
 
-## Why would we then need NextJS?
-
-Because NextJS makes building React apps easier - especially React apps that should have server-side rendering (though it does way more than just take care of that).
-
-In this article, we'll dive into the core concepts and features NextJS has to offer:
-
-- File-based Routing
-- Built-in Page Pre-rendering
-- Rich Data Fetching Capabilities
-- Image Optimization
-- Much More
-
-## Solving the challenge with fliar
-
-Write a function that accepts a string.
+- Linked Listss
+- SearchTree
+- Ques
 
 ```js
-function capitalize(str) {
-  return str
-    .split(" ")
-    .map((word) => word[0].toUpperCase() + word.slice(1))
-    .join(" ");
+let empty = [];
 
-  // const a = str.split(" ");
-
-  // let q = "";
-  // let b = "";
-  // a.forEach((word) => {
-  //   let bar = word[0].toUpperCase();
-  //   q = q + " " + bar + word.slice(1);
-  //   b = q.split(" ");
-  //   b.shift();
-  // });
-  // return b.join(" ");
+for (let i = 0; i < cr.length; i++) {
+  if (cr[i][0] === "" && cr[i][1] === "" && cr[i][11] === "") {
+    empty.push(i - 1);
+  }
 }
+
+const list = [];
+empty.unshift(0);
+for (let i = 0; i < empty.length - 1; i++) {
+  let c = empty[i];
+  let h = empty[i + 1];
+  let r = h - c;
+  list.push(r);
+}
+const final = [];
+list[0] = list[0] + 1;
+
+list.forEach((l) => {
+  final.push(cr.splice(0, l));
+});
+final[0].unshift(["", "", "", "", "", "", "", "", "", "", "", ""]);
+final.forEach((row) => {
+  row.shift();
+});
+const lastone = [...final];
+const b = {};
+lastone.map((index) => {
+  b[index[0][0]] = [...index];
+  return [...lastone];
+});
+
+const STARTLIST = [];
+const getCarList = (b) => {
+  for (const [key] of Object.entries(b)) {
+    STARTLIST.push(parseInt(key));
+  }
+};
+getCarList(b);
 ```
+
+## Send me a message if you would like to see more...
+
+![Create routes via your file + folder structure](adminar.png)
+
+## Want to see the result ?
+
+- For privacy reasons only the front end side can be viewed.
+- Available car numbers this date: 16 , 17 , 21 , 27 , 29
+
+See the online version [here](https://wijzijnar.netlify.app/).

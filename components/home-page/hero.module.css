@@ -1,48 +1,30 @@
-/* .hero {
-  min-height: 100vh;
-  min-width: 100vw;
-  margin-top: 0;
-  position: relative;
-} */
- 
-/*  
-.image {
-  width: 300px;
-  height: 300px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: var(--color-grey-700);
-  margin: auto;
-}
-
-.image img {
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  height: 100%;
-} */
 
 .title {
   
-  font-size: var(--size-6);
+  font-size: var(--size-5);
   margin: var(--size-4) 0;
   color: var(--color-grey-50);
 }
 
 .text {
-  font-size: var(--size-4);
+  font-size: var(--size-3);
   color: var(--color-grey-50 );
   width: 90%;
   max-width: 40rem;
+  padding-bottom: 20px;
   margin: auto;
 }
-
+.heroSection {
+   position: absolute;
+  bottom: -109px;
+  left: 8%
+}
 .cover {
   background-image: linear-gradient(45deg,   var(--color-primary-200)  0%, #096fb9 100%);
   position: relative;
-  height: 420px;
-   padding: 50px;
+  height: 440px;
+   padding: 40px;
+ 
 }
 
  
@@ -61,7 +43,7 @@
   transition: 1s;
   transform-style: preserve-3d;
   position: relative;
-  
+   
 }
 
 .flipper.isFlipping {
@@ -78,8 +60,7 @@
 
 .front {
   transform: rotateY(0deg);
-  z-index: 9999;
-  margin-left: 20%;
+  z-index: 9999; 
   
 }
 
@@ -103,31 +84,13 @@
     box-shadow: -17px 13px 13px rgba(0, 0, 0, 0.09);
   }
   
-.wrapper {
-  /* max-height: 60vh;
-  min-width: 100vw;
-  margin-top: 0;
-  position: relative; */
-}
+ 
 @media (min-width: 768px) {
  
  
-.wrapper {
-   /* max-height: 110vh;
-  min-width: 80vw; 
-  padding:  50px;
-   
-  margin-top: 0;
-  margin-left:    38%;
-  position: relative;
- 
-  display: flex;
-  flex-direction: row;
-  overflow: hidden; */
-}
 .title {
   
-  font-size: var(--size-6);
+  font-size: var(--size-8);
   margin: var(--size-4) 0;
   color: var(--color-grey-50);
 }
@@ -137,41 +100,46 @@
   color: var(--color-grey-50 );
   width: 90%;
   max-width: 40rem;
-  margin-bottom: 90px;
+  padding-bottom: 20px;
+  margin: auto;
 }
-
+.heroSection {
+   position: absolute;
+  bottom: -209px;
+  left: 8%
+}
+.wrapper {
+  width: 800px;
+  background-color: inherit;
+   padding: 120px;
+   padding-top: 0px;
+}
 .cover {
-   position: relative;
-   
-     
-    padding-top: 0px;
-   
+  background-image: linear-gradient(45deg,   var(--color-primary-200)  0%, #096fb9 100%);
+  position: relative;
+  height: 540px;
+  width: 420px;
+    border: 4px solid black;
+ 
 }
 
  
 .coverz {
-     background-color: inherit;
-       background-image: none;
-
-
-}
-
+ 
+} 
+ 
 .coverx {
-  background-color: inherit;
-  
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     45deg,
-    var(--color-primary-700),
+    var(--color-primary-200),
      var(--color-primary-700)
-  ); */
-    background-image: none;
-
+  );
 }
 .flipper {
   transition: 1s;
   transform-style: preserve-3d;
   position: relative;
-    
+   
 }
 
 .flipper.isFlipping {
@@ -182,22 +150,34 @@
 .back {
   backface-visibility: hidden;
   position: absolute;
-  top: 0px;
-  
+  top: 0;
+  left: 0;
 }
 
 .front {
   transform: rotateY(0deg);
-  z-index: 9999;
-  left: 0;
-   
+  z-index: 9999; 
+  
 }
 
 .back {
   transform: rotateY(180deg);
-      
- 
-   
+  
+}
+ .shadowCustom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  box-shadow: -17px 13px 41px rgba(13, 78, 158, 0.6);
+  border: 2px solid #3bace5;
+
 
 }
+  .shadowInner {
+    width: 100%;
+    height: 100%;
+    box-shadow: -17px 13px 13px rgba(0, 0, 0, 0.09);
+  }
+  
 }
