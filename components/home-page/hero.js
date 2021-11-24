@@ -23,11 +23,12 @@ function Hero(props) {
         <div className={flipCss}>
           <div className={classes.back}>
             <Image
-              src="/images/site/laptop.jpg"
+              src="/images/site/labtop.jpg"
               alt="Profile pic"
               width={290}
               height={290}
             />
+
             <div className={classes.heroSection}>
               <h1 className={classes.title}> Passionate about development!</h1>
               <p className={classes.text}>
