@@ -60,4 +60,6 @@ exports.getCart = async (req, res, next) => {
 
 ## We learn the most when were struggling right ?
 
-See the store - If in your browsers switch to mobileview - [here](https://merwinkel.herokuapp.com).
+## DEMO
+
+See the store - If in your browsers switch to mobileview - [here](https://mernwinkel.herokuapp.com).

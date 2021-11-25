@@ -25,7 +25,7 @@ function Hero(props) {
             <Image
               src="/images/site/labtop.jpg"
               alt="Profile pic"
-              width={290}
+              width={220}
               height={290}
             />
 
@@ -46,7 +46,7 @@ function Hero(props) {
             <Image
               src="/images/site/wijnie.jpg"
               alt="Profile pic"
-              width={290}
+              width={220}
               height={290}
             />
             <div className={classes.heroSection}>
