@@ -9,7 +9,17 @@ function MainNavigation() {
           <Logo />
         </a>
       </Link>
-
+      <li>
+        <div>
+          <a
+            download="cvwijnie.pdf"
+            className="btn btn-success"
+            href="/images/site/cvwijnie.pdf"
+          >
+            CV
+          </a>
+        </div>
+      </li>
       <nav>
         <ul>
           <li>
